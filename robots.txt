@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /感谢.html
+
+Sitemap: https://mai-haoping.com/sitemap.xml
