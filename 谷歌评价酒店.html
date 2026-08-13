@@ -559,18 +559,6 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">他们试过，然后留下了。</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card"><img src="购买真实谷歌评价.webp" alt="购买真实谷歌评价酒店" title="提高谷歌评分酒店" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="购买谷歌五星评价.webp" alt="购买谷歌评价酒店" title="购买谷歌差评酒店" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="提高谷歌评分.webp" alt="提升谷歌评价酒店" title="谷歌虚假评价酒店" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="提升谷歌评价.webp" alt="删除谷歌评价酒店" title="清除谷歌评价酒店" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="可靠谷歌评价购买.webp" alt="购买谷歌评价酒店" title="购买谷歌评价酒店" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-            </div>
-        </div>
-    </section>
 
     <section class="seo-content">
         <div class="container">
@@ -672,7 +660,7 @@
                 const header = document.querySelector('.header');
                 header.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.1)' : '0 4px 15px rgba(0,0,0,0.08)';
             });
-            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .faq-item');
+            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .faq-item');
             const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
             animateElements.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el); });
             let animated = false;
